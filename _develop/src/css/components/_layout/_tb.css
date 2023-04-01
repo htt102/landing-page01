@@ -1,0 +1,111 @@
+@-webkit-keyframes effect-btn {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes effect-btn {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@media (--tb) {
+  body {
+    font-size: vwTb(16);
+    line-height: lh(16, 26);
+  }
+  a {
+    transition: opacity 0.2s linear;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  a[href^='tel'] {
+    display: inline-block;
+    pointer-events: none;
+    text-decoration: none;
+  }
+  .show_sp {
+    display: none !important;
+  }
+  .root {
+    overflow: hidden;
+  }
+  .btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: vwTb(12) vwTb(56);
+    width: vwTb(416);
+    height: vwTb(70);
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: vwTb(32);
+    line-height: lh(32, 46);
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(180deg, #ff3f79 0%, #cf0643 100%);
+    border-radius: vwTb(100);
+    overflow: hidden;
+    &:after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: vwTb(-110);
+      left: 0;
+      width: vwTb(30);
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      animation: effect-btn 3s ease-in-out infinite;
+    }
+    .icon-arrow {
+      display: inline-block;
+      width: vwTb(30);
+      height: vwTb(30);
+      margin-left: vwTb(10);
+      background: url('../images/common/icon_arrow01.png') no-repeat;
+      background-size: cover;
+    }
+    &-large {
+      width: vwTb(592);
+      height: vwTb(93);
+      font-size: vwTb(48);
+      line-height: lh(48, 69);
+    }
+  }
+}

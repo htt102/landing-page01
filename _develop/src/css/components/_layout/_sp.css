@@ -1,0 +1,13 @@
+@media (--sp) {
+  body {
+    font-size: vw(15);
+    line-height: lh(15, 26);
+  }
+  .show_pc {
+    display: none !important;
+  }
+  .root {
+    overflow: hidden;
+    min-width: 320px;
+  }
+}

@@ -1,0 +1,127 @@
+mixin pic(pc, sp, alt='')
+  picture
+    source(media='(min-width: 769px)', srcset=pathImg+pc)
+    source(media='(max-width: 768px)', srcset=pathImg+sp)
+    img(src=pathImg+pc, srcset=pathImg+pc, alt=alt, class=attributes.class)
+
+
+//-  width / height自動入力版画像タグ<img>。
+//-  imagesからでいいです。例) +img('images/utils/logo.png');
+mixin img(src, alt='')
+  -
+    const targetSrc = `${ src }`
+    let targetPath = `images/${targetSrc}`
+      .replace(/["']/g, '')
+      .replace(/\.\.\//g, '')
+      .replace(/^\//i, '');
+    targetPath = nodePath.resolve(nodeDest, `${ process.env.npm_package_config_assetPath }/`, targetPath);
+
+    let isError = false;
+    let dimensions = null;
+    try {
+      let file = nodeFs.readFileSync(targetPath);
+    } catch(e) {
+      isError = true;
+    }
+    if (!isError) {
+      dimensions = nodeSize(targetPath);
+    }
+  if dimensions
+    img(src=pathImg + targetSrc, alt=alt, width=dimensions.width, height=dimensions.height,loading="lazy", decoding="async", class=attributes.class)
+  else
+    img(src=pathImg + targetSrc, alt=alt, class=attributes.class)
+
+//-
+  ** Create main visual element
+  **
+  * @enTitle String
+  * @jpTitle String
+  * @pcBg String
+  * @spBg String
+mixin mv(enTitle, jpTitle)
+  .mv
+    //- .mv__foreground
+    //-   +pic(pcBg, spBg, '')(class="fit")
+    .row.mv__inner
+      h2
+        span.mv__title= enTitle
+        span.mv__subtitle= jpTitle
+
+//-
+  ** Create main visual element
+  **
+  * @list Array
+mixin breadcrumb(list = [])
+  .row
+    ul.breadcrumb
+      each item in list
+        li
+          if (item.link)
+            a(href= item.link)= item.name
+          else
+            span= item.name
+
+//- For menu
+mixin menu()
+  - 
+    var listMenu = [
+      {
+        label: 'コース ・ 料金',
+        link: '#course_price',
+        isOutside: false
+      },
+      {
+        label: '受講の流れ',
+        link: '#flow',
+        isOutside: false
+      },
+      {
+        label: '選ばれる理由',
+        link: '#point',
+        isOutside: false
+      },
+      {
+        label: '講師紹介',
+        link: '#instructor',
+        isOutside: false
+      },
+      {
+        label: 'ブログ',
+        link: '#',
+        isOutside: true
+      },
+      {
+        label: 'お問い合わせ',
+        link: '#contact',
+        isOutside: false
+      }
+    ];
+  ul 
+    each menu in listMenu
+      if menu.isOutside
+        li
+          a(href=menu.link target="_blank") !{menu.label}
+      else
+        li
+          a(href=subDirectory+menu.link) !{menu.label}
+
+mixin pagination()
+  ul.paging.row 
+    li.prev
+      a(href="#").glyphs-arrow-btn &nbsp;
+    li
+      a(href="#") 1
+    li.dot
+      //- a(href="#") ...
+    li
+      a(href="#") 5
+    li.active
+      a(href="#") 6
+    li
+      a(href="#") 7
+    li.dot
+      //- a(href="#") ...
+    li
+      a(href="#") 10
+    li.next
+      a(href="#").glyphs-arrow-btn &nbsp;  

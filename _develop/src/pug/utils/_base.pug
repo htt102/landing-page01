@@ -1,0 +1,92 @@
+-
+  var subDirectory = process.env.npm_package_config_subDirectory;
+  var assetPath = `/${ subDirectory }${ process.env.npm_package_config_assetPath }/`;
+  var pathImg = `${assetPath}images/`
+  var isSSI = false;
+
+include ./_jsonLD.pug
+
+block meta
+  -
+    var title = "";
+    var description = "";
+    //- var keywords = "a,b,c,d,e"
+    var url = ""
+
+block subTitle
+  - var pageTitle = ''
+
+-
+  if (pageTitle.length) {
+    pageTitle = pageTitle + ' | ';
+  }
+
+block classPage
+  - var pageClass = '';
+
+include ./_mixins
+
+
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name="format-detection", content="telephone=no")
+    title #{pageTitle}#{title}
+    meta(name='Description', content=description)
+    //- meta(name='Keywords', content=keywords) ＊今やGoogleはここをサポートしていないのでデフォルトではdisableしておきます。
+
+    meta(property='og:type', content='website')
+    meta(property='og:description', content=description)
+    meta(property='og:title', content=pageTitle+title)
+    meta(property='og:url', content=url)
+    meta(property='og:image', content=url + 'og.png')
+    meta(property='og:locale', content='ja_JP')
+
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content=title)
+    meta(name='twitter:description', content=description)
+    link(rel='shortcut icon', href='/favicon.ico')
+
+    block stylesheet
+      link(rel="preconnect", href="https://fonts.googleapis.com")
+      link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap", rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap", rel="stylesheet")
+      link(rel="stylesheet", href='../assets/css/common.css')
+
+    != `\n${ createLD(jsonLD) }`
+
+    block richResults
+    script.
+      var bodyWidth = (document.body && document.body.clientWidth) || 0; document.documentElement.style.setProperty('--vw', (bodyWidth / 100) + 'px'); document.documentElement.style.setProperty('--vh', (window.innerHeight / 100) + 'px');
+
+  body
+    #root.root(class=pageClass)
+      //-
+        isSSI = trueの時SSI, そうでない時pugでコーディング
+        watch中に、static_files/include/header.htmlとかを作成すればpublic_htmlにコピーされる。
+      if isSSI
+        != `\n\n      <!--#include virtual="/${ subDirectory }${ process.env.npm_package_config_assetPath }/include/header.html" -->\n`
+      else
+        header.header
+          include ./_header.pug
+
+      main
+        block main
+
+
+      //-  SSIのfooter版。サーバーで使えるか使えないかで分けると良い。
+      if isSSI
+        != `\n\n      <!--#include virtual="/${ subDirectory }${ process.env.npm_package_config_assetPath }/include/footer.html" -->\n`
+      else
+        footer.footer
+          include ./_footer.pug
+
+
+    block script
+      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/vendor.js', defer)
+      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/runtime.js', defer)
+      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/bundle.js', defer)
