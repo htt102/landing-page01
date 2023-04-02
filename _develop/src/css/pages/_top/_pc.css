@@ -87,7 +87,8 @@
         line-height: lh(64, 88);
         text-align: center;
         color: #565e66;
-        background: url('../images/top/main_bg_ttl.png') no-repeat bottom left -20px;
+        background: url('../images/top/main_bg_ttl.png') no-repeat bottom left;
+        background-size: cover;
         .clr01 {
           color: #f42d69;
         }
