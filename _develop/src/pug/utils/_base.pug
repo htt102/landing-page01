@@ -8,7 +8,7 @@ include ./_jsonLD.pug
 
 block meta
   -
-    var title = "";
+    var title = "Ginza 78 Clinic | 安心できる美容医療を低価格で";
     var description = "";
     //- var keywords = "a,b,c,d,e"
     var url = ""
@@ -55,7 +55,7 @@ html(lang='ja')
       link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
       link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap", rel="stylesheet")
       link(href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap", rel="stylesheet")
-      link(rel="stylesheet", href='../assets/css/common.css')
+      link(rel="stylesheet", href='./assets/css/common.css')
 
     != `\n${ createLD(jsonLD) }`
 
@@ -71,7 +71,7 @@ html(lang='ja')
       if isSSI
         != `\n\n      <!--#include virtual="/${ subDirectory }${ process.env.npm_package_config_assetPath }/include/header.html" -->\n`
       else
-        header.header
+        header.header#header
           include ./_header.pug
 
       main
@@ -87,6 +87,6 @@ html(lang='ja')
 
 
     block script
-      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/vendor.js', defer)
-      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/runtime.js', defer)
-      script(src='/' + subDirectory + process.env.npm_package_config_assetPath + '/js/bundle.js', defer)
+      script(src='./assets/js/vendor.js', defer)
+      script(src='./assets/js/runtime.js', defer)
+      script(src='./assets/js/bundle.js', defer)

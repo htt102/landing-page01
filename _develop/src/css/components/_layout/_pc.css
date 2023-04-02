@@ -98,7 +98,7 @@
       width: 30px;
       height: 30px;
       margin-left: 10px;
-      background: url('../images/common/icon_arrow01.png') no-repeat;
+      background: url('../images/common/icon_arrow01.svg') no-repeat;
       background-size: cover;
     }
     &-large {

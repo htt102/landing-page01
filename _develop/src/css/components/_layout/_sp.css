@@ -1,7 +1,7 @@
 @media (--sp) {
   body {
-    font-size: vw(15);
-    line-height: lh(15, 26);
+    font-size: vw(16);
+    line-height: lh(16, 24);
   }
   .show_pc {
     display: none !important;
@@ -9,5 +9,50 @@
   .root {
     overflow: hidden;
     min-width: 320px;
+  }
+  .btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: vw(14) vw(35);
+    width: vw(311);
+    height: vw(62);
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: vw(24);
+    line-height: lh(24, 34);
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(180deg, #ff3f79 0%, #cf0643 100%);
+    border-radius: vw(100);
+    overflow: hidden;
+    &:after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -110px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      animation: effect-btn 3s ease-in-out infinite;
+    }
+    .icon-arrow {
+      display: inline-block;
+      width: vw(30);
+      height: vw(30);
+      margin-left: vw(14);
+      background: url('../images/common/icon_arrow01.svg') no-repeat;
+      background-size: cover;
+    }
+    &-large {
+      width: vw(348);
+      height: vw(62);
+      padding: vw(12) vw(24);
+      font-size: vw(28);
+      line-height: lh(28, 38);
+    }
   }
 }

@@ -1,0 +1,70 @@
+@media (--sp) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      z-index: -1;
+    }
+    &.fixed {
+      &:after {
+        background: rgba(255, 255, 255, 0.8);
+        /* backdrop-filter: blur(28px); */
+        @supports ((-webkit-backdrop-filter: blur(28px)) or (backdrop-filter: blur(28px))) {
+          background-color: rgba(255, 255, 255, 0.07);
+          -webkit-backdrop-filter: blur(28px);
+          backdrop-filter: blur(28px);
+        }
+      }
+    }
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: vw(14) vw(16);
+      height: vw(76);
+    }
+    &__logo {
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      width: vw(200);
+    }
+    &__btn {
+      a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: vw(8) vw(20);
+        width: vw(132);
+        height: vw(40);
+        font-weight: 500;
+        font-size: vw(16);
+        line-height: lh(16, 24);
+        letter-spacing: 0.1em;
+        color: #fff;
+        background: #d1ae16;
+        border-radius: vw(100);
+        &:after {
+          content: '';
+          margin-left: vw(8);
+          width: vw(25);
+          height: vw(8);
+          background: url('../images/common/arrow01.png');
+          background-size: vw(25) vw(8);
+        }
+      }
+    }
+  }
+}

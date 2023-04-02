@@ -8,7 +8,7 @@ const pcDesignHeight = 1280; //-  vw風にpc計算する用
 const tbDesignWidth = 1280; //-  vw風にpc計算する用
 const tbDesignHeight = 1280; //-  vw風にpc計算する用
 
-const spDesignWidth = 390; //-  vw計算用
+const spDesignWidth = 375; //-  vw計算用
 const spDesignHeight = 736; //-  vh計算用
 
 module.exports = (ctx) => ({

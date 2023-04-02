@@ -98,7 +98,7 @@
       width: vwTb(30);
       height: vwTb(30);
       margin-left: vwTb(10);
-      background: url('../images/common/icon_arrow01.png') no-repeat;
+      background: url('../images/common/icon_arrow01.svg') no-repeat;
       background-size: cover;
     }
     &-large {

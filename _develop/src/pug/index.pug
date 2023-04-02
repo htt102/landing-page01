@@ -1,7 +1,7 @@
 extends ./utils/_base.pug
 
 block append stylesheet
-  link(rel="stylesheet", href='../assets/css/top.css')
+  link(rel="stylesheet", href='./assets/css/top.css')
 
 block main
   section.main-visual
@@ -11,7 +11,7 @@ block main
           span.clr01 光で洗う
           br
           span.clr02 最新 美肌治療!!
-        p.visual-catch フォトフェイシャル®︎M22ステラ
+        p.visual-catch フォトフェイシャル®ステラM22
         ul.visual-list 
           li シミ
           li くすみ
@@ -26,6 +26,10 @@ block main
           |  (税込)
 
   section.limited.block-content
+    span.pattent.show_pc
+      img(src="./assets/images/top/bg09.png", alt="")
+    span.pattent01.show_pc
+      img(src="./assets/images/top/bg10.png", alt="")
     .inner 
       .b-limited
         .limited-wrap 
@@ -65,7 +69,7 @@ block main
 
   section.worries
     .inner 
-      h3.page-ttl 
+      h3.page-ttl.page-ttl--left
         span お悩み
       ul.list-check 
         li シミ・そばかすが気になる
@@ -74,21 +78,25 @@ block main
         li 老化による小じわやたるみ
         li 目立ってしまう毛穴の開き
         li 肌のくすみや色ムラが気になる
-      img(src="./assets/images/top/model01.png", alt="").model01
+      img(src="./assets/images/top/model01.png", alt="").model01.show_pc
+      img(src="./assets/images/top/model01_sp.png", alt="").model01.show_sp
   
   section.recommend
     .recommend-head
       .inner 
         p そんなあなたにおススメするのは…
-        h3.catch フォトフェイシャル®︎M22ステラ
+        h3.catch フォトフェイシャル®ステラM22
     .recommend-product 
-      img(src="./assets/images/top/product01.png", alt="")
+      img(src="./assets/images/top/product01.png", alt="").show_pc
+      img(src="./assets/images/top/product01_sp.png", alt="").show_sp
   
   section.photofacial
     .box-head 
       .inner 
         h3.page-ttl.page-ttl01 
-          span フォトフェイシャル®︎M22ステラなら！
+          span フォトフェイシャル
+            br.show_sp
+            | ®ステラM22なら！
     .block-wrap.photofacial-wrap
       .inner
         ul.photofacial-list 
@@ -127,7 +135,7 @@ block main
     .box-head.clr01
       .inner 
         h3.page-ttl.page-ttl01 
-          span フォトフェイシャル®︎M22ステラとは
+          span フォトフェイシャル®ステラM22とは
     .block-wrap
       .inner 
         .text-image 
@@ -159,7 +167,7 @@ block main
       .inner
         .box-photo 
           h4.photo-ttl シミ
-          ul.list-photo 
+          ul.list-photo.list-column03
             li.item 
               .image 
                 img(src="./assets/images/top/photo_img01.jpg", alt="")
@@ -174,7 +182,7 @@ block main
               p.caption After 5 treatments
         .box-photo 
           h4.photo-ttl そばかす、毛穴の開き
-          ul.list-photo 
+          ul.list-photo.list-column02
             li.item 
               .image 
                 img(src="./assets/images/top/photo_img01.jpg", alt="")
@@ -239,11 +247,11 @@ block main
         .text
           p まずはお気軽にご相談を
           p.catch 無料でカウンセリング
-            br
-            | を受けるタ
+            br.show_pc
+            | を受ける
         .phone 
           a(href="tel:0120-611-999").tel 0120-611-999
-          p.time 月水金土日9 :00一20:00火木9:00一22:00  
+          p.time 受付時間：10:00〜18:30
       .box-price 
         h3.page-ttl.page-ttl01
           span 料金案内
@@ -276,6 +284,9 @@ block main
                 span ¥44,000
               p キャンペーン価格（初回）
               p.price-num ¥16,500
+        .price-note
+          p 当院でのM22施術が初めての方は初回キャンペーン価格でご利用いただけます
+          p ※表示料金はすべて税込み価格です。
 
   section.faq 
     .inner 
@@ -296,14 +307,14 @@ block main
       .box-receive
         h3.receive-ttl 施術を受けられない方
         ul.list-receive
-          li.item ・テキストテキストテキストテキストテキスト
-          li.item ・テキストテキストテキストテキスト
-          li.item ・テキストテキストテキストテキストテキスト
-          li.item ・テキストテキストテキスト
-          li.item ・テキストテキストテキストテキストテキスト
-          li.item ・テキストテキストテキストテキスト
-          li.item ・テキストテキストテキストテキストテキスト
-          li.item ・テキストテキスト
+          li.item テキストテキストテキストテキストテキスト
+          li.item テキストテキストテキストテキスト
+          li.item テキストテキストテキストテキストテキスト
+          li.item テキストテキストテキスト
+          li.item テキストテキストテキストテキストテキスト
+          li.item テキストテキストテキストテキスト
+          li.item テキストテキストテキストテキストテキスト
+          li.item テキストテキスト
 
   section.reservation
     .box-head.clr01
@@ -320,5 +331,48 @@ block main
   section.visit-us 
     .inner 
       h3.page-ttl 
-        span お気軽にご来院ください
+        span お気軽にご来院く
+          br.show_sp
+          | ださい
+      .box-phone 
+        .text.text-clr01
+          p まずはお気軽にご相談を
+          p.catch 無料でカウンセリング
+            br.show_pc
+            | を受ける
+        .phone 
+          a(href="tel:0120-611-999").tel 0120-611-999
+          p.time 受付時間：10:00〜18:30 
+    .b-access 
+      h3.page-ttl 
+        span 概要・アクセス
+      .overview-access 
+        .overview 
+          ul.list-overview
+            li.item 
+              i.icon.icon-home 
+              p.text 
+                span クリニック名
+                | Ginza78Clinic（ギンザセブンエイトクリニック）
+            li.item 
+              i.icon.icon-time 
+              p.text 
+                span 診療時間
+                | 10:00～19:00 最終受付18:00まで
+            li.item 
+              i.icon.icon-close 
+              p.text 
+                span 休診日
+                | 不定休（年末年始 休診）
+        .access 
+          ul.list-overview
+            li.item 
+              i.icon.icon-map 
+              p.text 
+                span 所在地
+                | 〒104-0061 東京都中央区銀座5-9-17 銀座あづまビル3階
+                | 東京メトロ：銀座駅 A5出口徒歩2分
+          .map 
+            iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6482.549684498262!2d139.765198!3d35.670234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b913231988d%3A0x724e0cf3888c237!2z6YqA5bqn44GC44Gl44G-44OT44Or!5e0!3m2!1szh-TW!2stw!4v1680407663772!5m2!1szh-TW!2stw", width="522", height="235", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+
 

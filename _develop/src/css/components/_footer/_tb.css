@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: vwTb(32);
-    max-width: vwTb(1516);
+    max-width: vwTb(1578);
     margin: 0 auto;
     .logo-copyright {
       display: flex;
@@ -31,16 +31,17 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-left: vwTb(-48);
+        margin-left: vwTb(-50);
         .item {
-          margin-left: vwTb(48);
+          margin-left: vwTb(50);
+          letter-spacing: 0.1em;
         }
       }
       .list-social {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-left: vwTb(48);
+        margin-left: vwTb(54);
         .item {
           width: vwTb(32);
           height: vwTb(32);

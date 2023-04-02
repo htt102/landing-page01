@@ -5,6 +5,27 @@
     left: 0;
     width: 100%;
     z-index: 100;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      z-index: -1;
+    }
+    &.fixed {
+      &:after {
+        background: rgba(255, 255, 255, 0.8);
+        /* backdrop-filter: blur(28px); */
+        @supports ((-webkit-backdrop-filter: blur(28px)) or (backdrop-filter: blur(28px))) {
+          background-color: rgba(255, 255, 255, 0.07);
+          -webkit-backdrop-filter: blur(28px);
+          backdrop-filter: blur(28px);
+        }
+      }
+    }
     &__container {
       display: flex;
       flex-direction: row;
@@ -17,6 +38,7 @@
       flex: none;
       order: 0;
       flex-grow: 0;
+      width: 200px;
     }
     &__btn {
       a {

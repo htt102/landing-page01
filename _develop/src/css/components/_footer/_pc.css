@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 32px;
-    max-width: 1516px;
+    max-width: 1578px;
     margin: 0 auto;
     .logo-copyright {
       display: flex;
@@ -31,16 +31,17 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-left: -48px;
+        margin-left: -50px;
         .item {
-          margin-left: 48px;
+          margin-left: 50px;
+          letter-spacing: 0.1em;
         }
       }
       .list-social {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-left: 48px;
+        margin-left: 54px;
         .item {
           width: 32px;
           height: 32px;

@@ -1,0 +1,45 @@
+@media (--sp) {
+  .footer {
+    padding: vw(24) 0;
+    background: #faf9f9;
+  }
+  .footer__wrap {
+    .logo-copyright {
+      text-align: center;
+      margin-bottom: vw(24);
+      .logo {
+        width: vw(200);
+        margin: 0 auto vw(8);
+      }
+      .copyright {
+        font-size: vw(10);
+        line-height: lh(10, 26);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #646c68;
+      }
+    }
+    .footer-links {
+      .ft-links {
+        margin-bottom: vw(24);
+        .item {
+          font-size: vw(14);
+          line-height: lh(14, 26);
+          text-align: center;
+          letter-spacing: 0.1em;
+        }
+      }
+      .list-social {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .item {
+          width: vw(32);
+          height: vw(32);
+          margin: 0 vw(5);
+        }
+      }
+    }
+  }
+}
