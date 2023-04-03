@@ -57,7 +57,7 @@
     z-index: 1;
     height: vwTb(909);
     margin-bottom: vwTb(170);
-    background: url('../images/top/mv_banner.png') no-repeat top center;
+    background: url('../images/top/mv_banner.jpg') no-repeat top center;
     background-size: cover;
     max-width: vwTb(1920);
     margin: 0 auto vwTb(190);
