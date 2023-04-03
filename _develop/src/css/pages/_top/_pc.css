@@ -4,6 +4,7 @@
     margin: 0 auto;
   }
   .page-ttl {
+    font-family: notoMedium;
     font-weight: 500;
     font-size: rem(48);
     line-height: lh(48, 69);
@@ -82,6 +83,7 @@
       &-tl {
         padding-bottom: 48px;
         margin-bottom: 6px;
+        font-family: notoMedium;
         font-weight: 500;
         font-size: rem(64);
         line-height: lh(64, 88);
@@ -99,6 +101,7 @@
       }
       &-catch {
         margin-bottom: 14px;
+        font-family: notoBold;
         font-weight: 700;
         font-size: rem(32);
         line-height: lh(32, 46);
@@ -118,6 +121,7 @@
           margin-top: 10px;
           width: 114px;
           height: 114px;
+          font-family: notoBold;
           font-weight: 700;
           font-size: rem(24);
           text-align: center;
@@ -133,6 +137,7 @@
         position: relative;
         display: inline-block;
         font-weight: 500;
+        font-family: notoMedium;
         font-size: rem(22);
         line-height: lh(22, 32);
         background: linear-gradient(89.88deg, rgba(0, 0, 0, 0) 0.08%, rgba(0, 0, 0, 0.15) 51.03%, rgba(0, 0, 0, 0) 99.89%);
@@ -235,7 +240,7 @@
                 padding: 20px;
                 background: #d1ae16;
                 border-radius: 100px;
-                font-family: $font_en;
+                font-family: playfairItalic;
                 font-style: italic;
                 font-weight: 400;
                 font-size: rem(44);
@@ -246,6 +251,7 @@
             }
             .catch {
               flex: 1;
+              font-family: notoBold;
               font-weight: 700;
               font-size: 32px;
               line-height: 46px;
@@ -262,6 +268,7 @@
             padding-top: 24px;
             flex: 1;
             min-height: 142px;
+            font-family: notoBold;
             font-weight: 700;
             font-size: rem(16);
             line-height: lh(16, 23);
@@ -346,6 +353,7 @@
     li {
       position: relative;
       padding-left: 31px;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: rem(24);
       line-height: lh(24, 34);
@@ -392,6 +400,7 @@
     &-head {
       position: relative;
       padding: 36px 0 57px;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: rem(24);
       line-height: lh(24, 34);
@@ -406,6 +415,7 @@
         transform: translateX(-50%);
         width: 1023px;
         padding: 0 0 18px;
+        font-family: notoBold;
         font-weight: 700;
         font-size: rem(56);
         line-height: lh(56, 80);
@@ -488,7 +498,7 @@
           align-items: flex-start;
           .num {
             flex: 1;
-            font-family: $font_en;
+            font-family: playfairItalic;
             font-style: italic;
             font-weight: 400;
             font-size: rem(128);
@@ -500,6 +510,7 @@
             color: #303b36;
             .catch {
               margin-bottom: 20px;
+              font-family: notoMedium;
               font-weight: 500;
               font-size: rem(32);
               line-height: lh(32, 42);
@@ -567,6 +578,7 @@
       padding: 9px 0 0;
       .catch {
         margin-bottom: 16px;
+        font-family: notoMedium;
         font-weight: 500;
         font-size: rem(24);
         line-height: lh(24, 34);
@@ -593,6 +605,7 @@
     .photo-ttl {
       position: relative;
       text-align: center;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: rem(32);
       line-height: lh(32, 42);
@@ -624,6 +637,7 @@
         margin-top: 50px;
         .caption {
           text-align: center;
+          font-family: notoBold;
           font-weight: 700;
           color: #ffffff;
           padding: 10px;
@@ -693,13 +707,14 @@
           height: 98px;
           background: #d1ae16;
           border-radius: 100px;
+          font-family: notoMedium;
           font-weight: 500;
           font-size: rem(14);
           color: #fff;
           text-align: center;
           padding-bottom: 20px;
           .num {
-            font-family: $font_en;
+            font-family: playfairItalic;
             font-style: italic;
             font-weight: 400;
             font-size: rem(44);
@@ -718,6 +733,7 @@
           margin-right: 16px;
           .catch {
             margin-bottom: 8px;
+            font-family: notoMedium;
             font-weight: 500;
             font-size: rem(32);
             line-height: lh(32, 42);
@@ -752,6 +768,7 @@
         backdrop-filter: blur(12px);
       }
       border-radius: 16px 0px 0px 16px;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: rem(20);
       line-height: lh(20, 30);
@@ -779,6 +796,7 @@
       color: #ffffff;
       .tel {
         margin-bottom: 14px;
+        font-family: notoBold;
         font-weight: 700;
         font-size: rem(64);
         line-height: lh(64, 74);
@@ -824,11 +842,13 @@
         color: #646c68;
         .catch {
           margin-bottom: 10px;
+          font-family: notoMedium;
           font-weight: 500;
           font-size: rem(48);
           line-height: lh(48, 69);
           color: #303b36;
           span {
+            font-family: notoMedium;
             font-weight: 500;
             font-size: rem(20);
             line-height: lh(20, 29);
@@ -856,6 +876,7 @@
           }
         }
         .price-num {
+          font-family: notoBold;
           font-weight: 700;
           font-size: rem(64);
           line-height: lh(64, 74);
@@ -882,6 +903,7 @@
       }
       .catch {
         margin-bottom: 8px;
+        font-family: notoMedium;
         font-weight: 500;
         font-size: rem(32);
         line-height: lh(32, 43);
@@ -896,6 +918,7 @@
     width: 770px;
     margin: 0 auto;
     .receive-ttl {
+      font-family: notoMedium;
       font-weight: 500;
       font-size: rem(32);
       line-height: lh(32, 43);
@@ -996,6 +1019,7 @@
         span {
           margin-bottom: 3px;
           display: block;
+          font-family: notoBold;
           font-weight: 700;
           font-size: rem(20);
           line-height: lh(20, 24);

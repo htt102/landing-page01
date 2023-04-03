@@ -50,7 +50,7 @@
     "watch:js": "webpack -w --progress --env=development",
     "build:js": "webpack --progress --env=production",
     "build": "run-s clean:js build:file build:js build:html",
-    "build:all": "run-s clean:js build:icon build:file build:image build:pug build:js build:css build:html",
+    "build:all": "run-s clean:js build:file build:image build:pug build:js build:css build:html",
     "watch:localhost": "browser-sync start --config bs-config.js",
     "validate:html": "cross-conf-env chokidar \"npm_package_config_destnpm_package_config_subDirectory**/*.html\" -c \"html-validate --config htmlvalidate.json {path}\"",
     "relative": "node \"npm_scripts/to_relative\""

@@ -4,6 +4,7 @@
     margin: 0 auto;
   }
   .page-ttl {
+    font-family: notoMedium;
     font-weight: 500;
     font-size: vwTb(48);
     line-height: lh(48, 69);
@@ -82,6 +83,7 @@
       &-tl {
         padding-bottom: vwTb(48);
         margin-bottom: vwTb(6);
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vwTb(64);
         line-height: lh(64, 88);
@@ -99,6 +101,7 @@
       }
       &-catch {
         margin-bottom: vwTb(14);
+        font-family: notoBold;
         font-weight: 700;
         font-size: vwTb(32);
         line-height: lh(32, 46);
@@ -118,6 +121,7 @@
           margin-top: vwTb(10);
           width: vwTb(114);
           height: vwTb(114);
+          font-family: notoBold;
           font-weight: 700;
           font-size: vwTb(24);
           text-align: center;
@@ -133,6 +137,7 @@
         position: relative;
         display: inline-block;
         font-weight: 500;
+        font-family: notoMedium;
         font-size: vwTb(22);
         line-height: lh(22, 32);
         background: linear-gradient(89.88deg, rgba(0, 0, 0, 0) 0.08%, rgba(0, 0, 0, 0.15) 51.03%, rgba(0, 0, 0, 0) 99.89%);
@@ -235,7 +240,7 @@
                 padding: vwTb(20);
                 background: #d1ae16;
                 border-radius: vwTb(100);
-                font-family: $font_en;
+                font-family: playfairItalic;
                 font-style: italic;
                 font-weight: 400;
                 font-size: vwTb(44);
@@ -246,6 +251,7 @@
             }
             .catch {
               flex: 1;
+              font-family: notoBold;
               font-weight: 700;
               font-size: vwTb(32);
               line-height: vwTb(46);
@@ -262,6 +268,7 @@
             padding-top: vwTb(24);
             flex: 1;
             min-height: vwTb(142);
+            font-family: notoBold;
             font-weight: 700;
             font-size: vwTb(16);
             line-height: lh(16, 23);
@@ -346,6 +353,7 @@
     li {
       position: relative;
       padding-left: vwTb(31);
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vwTb(24);
       line-height: lh(24, 34);
@@ -392,6 +400,7 @@
     &-head {
       position: relative;
       padding: vwTb(36) 0 vwTb(57);
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vwTb(24);
       line-height: lh(24, 34);
@@ -406,6 +415,7 @@
         transform: translateX(-50%);
         width: vwTb(1023);
         padding: 0 0 vwTb(18);
+        font-family: notoBold;
         font-weight: 700;
         font-size: vwTb(56);
         line-height: lh(56, 80);
@@ -488,7 +498,7 @@
           align-items: flex-start;
           .num {
             flex: 1;
-            font-family: $font_en;
+            font-family: playfairItalic;
             font-style: italic;
             font-weight: 400;
             font-size: vwTb(128);
@@ -500,6 +510,7 @@
             color: #303b36;
             .catch {
               margin-bottom: vwTb(20);
+              font-family: notoMedium;
               font-weight: 500;
               font-size: vwTb(32);
               line-height: lh(32, 42);
@@ -567,6 +578,7 @@
       padding: vwTb(9) 0 0;
       .catch {
         margin-bottom: vwTb(16);
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vwTb(24);
         line-height: lh(24, 34);
@@ -593,6 +605,7 @@
     .photo-ttl {
       position: relative;
       text-align: center;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vwTb(32);
       line-height: lh(32, 42);
@@ -624,6 +637,7 @@
         margin-top: vwTb(50);
         .caption {
           text-align: center;
+          font-family: notoBold;
           font-weight: 700;
           color: #ffffff;
           padding: vwTb(10);
@@ -693,13 +707,14 @@
           height: vwTb(98);
           background: #d1ae16;
           border-radius: vwTb(100);
+          font-family: notoMedium;
           font-weight: 500;
           font-size: vwTb(14);
           color: #fff;
           text-align: center;
           padding-bottom: vwTb(20);
           .num {
-            font-family: $font_en;
+            font-family: playfairItalic;
             font-style: italic;
             font-weight: 400;
             font-size: vwTb(44);
@@ -718,6 +733,7 @@
           margin-right: vwTb(16);
           .catch {
             margin-bottom: vwTb(8);
+            font-family: notoMedium;
             font-weight: 500;
             font-size: vwTb(32);
             line-height: lh(32, 42);
@@ -752,6 +768,7 @@
         backdrop-filter: blur(vwTb(12));
       }
       border-radius: vwTb(16) vwTb(0) vwTb(0) vwTb(16);
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vwTb(20);
       line-height: lh(20, 30);
@@ -779,6 +796,7 @@
       color: #ffffff;
       .tel {
         margin-bottom: vwTb(14);
+        font-family: notoBold;
         font-weight: 700;
         font-size: vwTb(64);
         line-height: lh(64, 74);
@@ -824,11 +842,13 @@
         color: #646c68;
         .catch {
           margin-bottom: vwTb(10);
+          font-family: notoMedium;
           font-weight: 500;
           font-size: vwTb(48);
           line-height: lh(48, 69);
           color: #303b36;
           span {
+            font-family: notoMedium;
             font-weight: 500;
             font-size: vwTb(20);
             line-height: lh(20, 29);
@@ -856,6 +876,7 @@
           }
         }
         .price-num {
+          font-family: notoBold;
           font-weight: 700;
           font-size: vwTb(64);
           line-height: lh(64, 74);
@@ -882,6 +903,7 @@
       }
       .catch {
         margin-bottom: vwTb(8);
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vwTb(32);
         line-height: lh(32, 43);
@@ -896,6 +918,7 @@
     width: vwTb(770);
     margin: 0 auto;
     .receive-ttl {
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vwTb(32);
       line-height: lh(32, 43);
@@ -996,6 +1019,7 @@
         span {
           margin-bottom: vwTb(3);
           display: block;
+          font-family: notoBold;
           font-weight: 700;
           font-size: vwTb(20);
           line-height: lh(20, 24);

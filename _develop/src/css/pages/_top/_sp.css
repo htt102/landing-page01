@@ -13,6 +13,7 @@
       }
       &-tl {
         padding-bottom: vw(32);
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vw(42);
         line-height: lh(42, 60);
@@ -31,6 +32,7 @@
       &-catch {
         margin-bottom: vw(14);
         font-weight: 700;
+        font-family: notoBold;
         font-size: vw(21);
         line-height: lh(21, 30);
         text-align: center;
@@ -50,6 +52,7 @@
           width: vw(76);
           height: vw(76);
           font-weight: 700;
+          font-family: notoBold;
           font-size: vw(16);
           text-align: center;
           color: #565e66;
@@ -63,6 +66,7 @@
       &-price {
         position: relative;
         display: inline-block;
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vw(15);
         line-height: lh(15, 21);
@@ -98,6 +102,7 @@
 
   .page-ttl {
     font-weight: 700;
+    font-family: notoBold;
     font-size: vw(28);
     line-height: lh(28, 40);
     text-align: center;
@@ -211,7 +216,7 @@
                 padding: vw(15);
                 background: #d1ae16;
                 border-radius: vw(100);
-                font-family: $font_en;
+                font-family: playfairItalic;
                 font-style: italic;
                 font-weight: 400;
                 font-size: vw(35);
@@ -222,6 +227,7 @@
             .catch {
               flex: 1;
               font-weight: 700;
+              font-family: notoBold;
               font-size: vw(24);
               line-height: lh(24, 34);
               text-align: left;
@@ -239,6 +245,7 @@
             min-height: vw(98);
             min-width: vw(192);
             font-weight: 700;
+            font-family: notoBold;
             font-size: vw(14);
             line-height: lh(14, 20);
             text-align: center;
@@ -292,6 +299,7 @@
     li {
       position: relative;
       padding-left: vw(28);
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vw(16);
       line-height: lh(16, 23);
@@ -334,6 +342,7 @@
     &-head {
       position: relative;
       padding: vw(27) vw(27) vw(44);
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vw(20);
       line-height: lh(20, 29);
@@ -348,6 +357,7 @@
         width: vw(358);
         padding: 0 vw(32) vw(12);
         font-weight: 700;
+        font-family: notoBold;
         font-size: vw(32);
         line-height: lh(32, 38);
         text-align: center;
@@ -425,7 +435,7 @@
           align-items: flex-start;
           .num {
             flex: 1;
-            font-family: $font_en;
+            font-family: playfairItalic;
             font-style: italic;
             font-weight: 400;
             font-size: vw(64);
@@ -439,6 +449,7 @@
             color: #303b36;
             .catch {
               margin-bottom: vw(8);
+              font-family: notoMedium;
               font-weight: 500;
               font-size: vw(24);
               line-height: lh(24, 34);
@@ -486,6 +497,7 @@
       order: 2;
       .catch {
         margin-bottom: vw(8);
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vw(24);
         line-height: lh(24, 34);
@@ -516,6 +528,7 @@
     .photo-ttl {
       position: relative;
       text-align: center;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vw(24);
       line-height: lh(24, 34);
@@ -547,6 +560,7 @@
         .caption {
           text-align: center;
           font-weight: 700;
+          font-family: notoBold;
           font-size: vw(10);
           line-height: lh(10, 14);
           color: #ffffff;
@@ -626,6 +640,7 @@
           height: vw(58);
           background: #d1ae16;
           border-radius: vw(100);
+          font-family: notoMedium;
           font-weight: 500;
           font-size: vw(10);
           line-height: 1;
@@ -633,7 +648,7 @@
           text-align: center;
           padding-bottom: vw(5);
           .num {
-            font-family: $font_en;
+            font-family: playfairItalic;
             font-style: italic;
             font-weight: 400;
             font-size: vw(24);
@@ -649,6 +664,7 @@
           margin-bottom: vw(12);
           .catch {
             margin-bottom: vw(8);
+            font-family: notoMedium;
             font-weight: 500;
             font-size: vw(24);
             line-height: lh(24, 34);
@@ -677,6 +693,7 @@
         backdrop-filter: blur(12px);
       }
       border-radius: vw(16) vw(16) 0px 0px;
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vw(18);
       line-height: lh(18, 28);
@@ -703,6 +720,7 @@
       .tel {
         margin-bottom: vw(14);
         font-weight: 700;
+        font-family: notoBold;
         font-size: vw(48);
         line-height: lh(48, 58);
       }
@@ -721,6 +739,7 @@
       margin-top: vw(24);
       font-size: vw(16);
       line-height: lh(16, 23);
+      font-family: notoMedium;
       font-weight: 500;
       > p {
         + p {
@@ -746,11 +765,13 @@
         margin-bottom: vw(10);
         .catch {
           margin-bottom: vw(8);
+          font-family: notoMedium;
           font-weight: 500;
           font-size: vw(32);
           line-height: lh(32, 46);
           color: #303b36;
           span {
+            font-family: notoMedium;
             font-weight: 500;
             font-size: vw(20);
             line-height: lh(20, 29);
@@ -778,6 +799,7 @@
         }
         .price-num {
           font-weight: 700;
+          font-family: notoBold;
           font-size: vw(48);
           line-height: lh(48, 58);
           color: #f42d69;
@@ -802,6 +824,7 @@
       }
       .catch {
         margin-bottom: vw(8);
+        font-family: notoMedium;
         font-weight: 500;
         font-size: vw(20);
         line-height: lh(20, 30);
@@ -815,6 +838,7 @@
   .box-receive {
     margin: 0 vw(16);
     .receive-ttl {
+      font-family: notoMedium;
       font-weight: 500;
       font-size: vw(28);
       line-height: lh(28, 38);
@@ -910,6 +934,7 @@
         span {
           display: block;
           font-weight: 700;
+          font-family: notoBold;
           font-size: vw(16);
           line-height: lh(16, 24);
         }

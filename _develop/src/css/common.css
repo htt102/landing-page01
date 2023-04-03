@@ -36,8 +36,28 @@ img.fit.fit--contain でobjectfit-contain;
   }
 }
 
+@font-face {
+  font-family: noto;
+  src: url(../fonts/NotoSerifJP-Regular.otf);
+}
+
+@font-face {
+  font-family: notoMedium;
+  src: url(../fonts/NotoSerifJP-Medium.otf);
+}
+
+@font-face {
+  font-family: notoBold;
+  src: url(../fonts/NotoSerifJP-Bold.otf);
+}
+
+@font-face {
+  font-family: playfairItalic;
+  src: url(../fonts/PlayfairDisplay-Italic.ttf);
+}
+
 body {
-  font-family: $font_base;
+  font-family: noto;
   font-weight: 400;
   color: #646c68;
 }
