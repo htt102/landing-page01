@@ -70,7 +70,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: vwTb(12) vwTb(56);
+    padding: vwTb(12) vwTb(30);
     width: vwTb(416);
     height: vwTb(70);
     margin: 0 auto;
