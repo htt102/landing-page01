@@ -30,7 +30,7 @@
         }
       }
       &-catch {
-        margin-bottom: vw(14);
+        margin-bottom: vw(5);
         font-weight: 700;
         font-family: notoBold;
         font-size: vw(21);
@@ -341,11 +341,11 @@
   .recommend {
     &-head {
       position: relative;
-      padding: vw(27) vw(27) vw(44);
+      padding: vw(27) vw(20) vw(44);
       font-family: notoMedium;
       font-weight: 500;
-      font-size: vw(20);
-      line-height: lh(20, 29);
+      font-size: vw(18);
+      line-height: lh(18, 27);
       text-align: center;
       color: #ffffff;
       background: #d1ae16;
@@ -368,12 +368,30 @@
       }
     }
     &-product {
-      text-align: center;
-      padding: vw(100) 0 vw(50);
+      /* text-align: center; */
+      padding: vw(75) 0 vw(50);
       background: url('../images/top/bg03_sp.png') no-repeat;
       background-size: cover;
-      img {
+      /* img {
         width: vw(366);
+      } */
+      .b-product {
+        padding: 0 vw(16);
+        .image {
+          float: left;
+          width: vw(185);
+          margin-right: vw(18);
+        }
+        .text {
+          font-size: vw(14);
+          line-height: lh(14, 24);
+          font-weight: 500;
+          letter-spacing: ls(50);
+          .catch {
+            font-weight: 700;
+            margin-bottom: vw(22);
+          }
+        }
       }
     }
   }
@@ -422,7 +440,7 @@
       margin: 0 vw(16);
       li {
         position: relative;
-        padding: vw(32) vw(16) 0;
+        padding: vw(32) vw(14) vw(14);
         background: #ffffff;
         box-shadow: 0px vw(69) vw(38) vw(-45) rgba(0, 0, 0, 0.08);
         border-radius: vw(24);
@@ -433,6 +451,8 @@
         .text-num {
           display: flex;
           align-items: flex-start;
+          padding: 0 vw(2);
+          margin-bottom: vw(21);
           .num {
             flex: 1;
             font-family: playfairItalic;
@@ -459,7 +479,9 @@
             }
           }
         }
-        &.item01 {
+        .image {
+        }
+        /* &.item01 {
           .image {
             width: vw(241);
             margin-left: vw(10);
@@ -476,7 +498,7 @@
             width: vw(191);
             margin: 0 auto;
           }
-        }
+        } */
       }
     }
   }
